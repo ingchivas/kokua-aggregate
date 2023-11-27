@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation'
 import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import MailIcon from '@mui/icons-material/Mail';
 
 const apiRoute = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:6969';
 const pacienteRoute = process.env.NEXT_PUBLIC_PACIENTE_URL || 'https://google.com';
@@ -89,7 +90,7 @@ function Home() {
               Continuar
             </button>
           </form>
-          <p className="text-xs mt-4">¿Necesitas ayuda? <a href="mailto:joseemiliokuri@gmail.com" className="text-blue-500">Contáctanos</a></p>
+          <p className="text-xs mt-4">¿Necesitas ayuda? <a href="mailto:joseemiliokuri@gmail.com" className="text-blue-500"><MailIcon /> Contáctanos</a></p>
         </div>
 
       </div>
