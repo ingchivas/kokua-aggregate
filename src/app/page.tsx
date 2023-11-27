@@ -89,6 +89,7 @@ function Home() {
               Continuar
             </button>
           </form>
+          <p className="text-xs mt-4">¿Necesitas ayuda? <a href="mailto:joseemiliokuri@gmail.com" className="text-blue-500">Contáctanos</a></p>
         </div>
 
       </div>
