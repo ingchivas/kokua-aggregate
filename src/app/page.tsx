@@ -43,10 +43,10 @@ function Home() {
             window.location.href = ejecutivoRoute;
             break;
           case 'Administrador':
-            window.location.href = administradorRoute;
+            window.location.href = `${administradorRoute}/sign-in?username=${username}`;
             break;
           case 'Proveedor':
-            window.location.href = proveedorRoute;
+            window.location.href = `${proveedorRoute}/sign-in?username=${username}`;
             break;
           case 'Medico':
             window.location.href = medicoRoute;
