@@ -61,7 +61,7 @@ function Home() {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 text-black">
+    <div className="flex items-center justify-center min-h-screen bg-blue-50 text-black">
       <div className="flex-col ">
         <div className="bg-white rounded-lg p-8 shadow-md text-center flex flex-col items-center px-28">
           <Image
