@@ -7,6 +7,7 @@ import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import MailIcon from '@mui/icons-material/Mail';
+import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
 
 const apiRoute = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:6969';
 const pacienteRoute = process.env.NEXT_PUBLIC_PACIENTE_URL || 'https://google.com';
@@ -90,7 +91,9 @@ function Home() {
               Continuar
             </button>
           </form>
-          <p className="text-xs mt-4">¿Necesitas ayuda? <a href="mailto:joseemiliokuri@gmail.com" className="text-blue-500"><MailIcon /> Contáctanos</a></p>
+          <p className="text-xs mt-4">¿No tienes cuenta? <a href="https://admin.kokuahealth.tech/Registro" className="text-blue-500"><AssignmentIndIcon /> Regístrate</a></p>
+          <p className="text-xs mt-4">¿Tienes problemas? <a href="mailto:joseemiliokuri@gmail.com" className="text-blue-500"><MailIcon /> Contáctanos</a></p>
+
         </div>
 
       </div>
