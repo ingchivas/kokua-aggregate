@@ -84,6 +84,7 @@ function Home() {
       const data = await response.json();
 
       if (data.tipoAcceso === 'Administrador' || data.tipoAcceso === 'Proveedor') {
+        toast.info(`Cargando ${data.tipoAcceso}`);
         navigateTo(data.tipoAcceso);
       }
       if (data.error) {
@@ -91,6 +92,9 @@ function Home() {
       }
 
       else {
+        setTimeout(() => {
+          toast.info('Ingrese su contraseña para continuar.');
+        }, 1000);
         setShowPassword(true);
       }
     } catch (error) {
@@ -138,7 +142,7 @@ function Home() {
             {!showPassword && (
               <button
                 type="submit"
-                className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-4"
+                className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               >
                 Continuar
               </button>
@@ -146,7 +150,7 @@ function Home() {
             {showPassword && (
               <button
                 type="submit"
-                className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-4"
+                className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               >
                 Ingresar
               </button>
